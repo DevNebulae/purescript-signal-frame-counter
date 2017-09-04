@@ -1,0 +1,29 @@
+# http://editorconfig.org
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Use 2 spaces for PureScript files
+[*.purs]
+indent_size = 2
+indent_style = tab
+
+# Package files usually only contains 2 spaces as tab size
+[{package, bower}.json]
+indent_size = 2
+indent_style = space
+
+[*.yaml]
+indent_size = 4
+indent_style = space
+
+[*.md]
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = false
